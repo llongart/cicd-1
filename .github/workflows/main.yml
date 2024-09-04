@@ -10,7 +10,7 @@ on:
 
 jobs:
   Hello:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Download the repository
