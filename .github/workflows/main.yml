@@ -18,3 +18,11 @@ jobs:
 
       - name: Hello Push
         run: echo "Hello world from github actions on push"
+
+      - name: Hello from development 🖥️
+        if: ${{ github.ref == 'refs/heads/develop' }}
+        run: echo "Hello from develop branch"
+
+      - name: Hello from Main 📽️
+        if: ${{ github.ref == 'refs/heads/develop' }}
+        run: echo "Hello from Main branch"
